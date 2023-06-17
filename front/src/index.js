@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import ErrorPage from './component/error-page/ErrorPage';
 import Note from './component/note/Note'
+import './i18n';
 
 const router = createBrowserRouter([
   {

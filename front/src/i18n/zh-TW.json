@@ -1,0 +1,19 @@
+{
+    "noteApp": {
+        "title": "Moty 筆記本",
+        "selectedNoteTip": "請選擇筆記本",
+        "noNoteExist": "沒有筆記本存在",
+        "menuAppBar": {
+            "login": "登入",
+            "logout": "登出",
+            "lang": "語言"
+        },
+        "navMenu": {
+            "home": "Home"
+        }
+    },
+    "i18n": {
+        "english": "英文",
+        "zh-TW": "中文"
+    }
+}

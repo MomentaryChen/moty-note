@@ -8,8 +8,6 @@ import NavMenu from './NavMenu';
 
 function AppLayout(props) {
   const userContext = React.useContext(UserContext);
-  const appContext = React.useContext(AppContext);
-
   return (
     <>
       <React.Fragment>

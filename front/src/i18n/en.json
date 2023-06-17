@@ -1,0 +1,19 @@
+{
+    "noteApp": {
+        "title": "Moty Note",
+        "selectedNoteTip": "Please select a note",
+        "noNoteExist": "No Notes",
+        "menuAppBar": {
+            "login": "Login",
+            "logout": "Logout",
+            "lang": "Langauge"
+        },
+        "navMenu": {
+            "home": "Home"
+        }
+    },
+    "i18n": {
+        "english": "English",
+        "zh-TW": "Chinese"
+    }
+}

@@ -4,25 +4,26 @@ import ListItemText from "@mui/material/ListItemText";
 import Box from "@mui/material/Box";
 import * as React from "react";
 import Typography from "@mui/material/Typography";
+import { useTranslation } from 'react-i18next';
 
 const noteTmp = [
-  {
-    id: 45566,
-    name: "文章",
-    desc: "我的小日記",
-  },
+//   {
+//     id: 45566,
+//     name: "文章",
+//     desc: "我的小日記",
+//   },
 
-  {
-    id: 45567,
-    name: "文章2",
-    desc: "記住一件事情",
-  },
+//   {
+//     id: 45567,
+//     name: "文章2",
+//     desc: "記住一件事情",
+//   },
 
-  {
-    id: 45568,
-    name: "文章3",
-    desc: "When rendering a list within a component that defines its own gutters, ListItem gutters can be disabled with disableGutters.",
-  },
+//   {
+//     id: 45568,
+//     name: "文章3",
+//     desc: "When rendering a list within a component that defines its own gutters, ListItem gutters can be disabled with disableGutters.",
+//   },
 ];
 
 
@@ -30,6 +31,8 @@ function Note(props) {
   const [open, setOpen] = React.useState(true);
   const [notes, setNotes] = React.useState(noteTmp);
   const [selectedNote, setSelectedNote] = React.useState(null);
+
+  const { t } = useTranslation();
 
   function selectNot(note) {
     setSelectedNote(note);
@@ -63,7 +66,7 @@ function Note(props) {
               })
             ) : (
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                No Notes
+                {t('noteApp.noNoteExist')}
               </Typography>
             )}
           </Box>
@@ -73,7 +76,7 @@ function Note(props) {
             selectedNote.desc
           ) : (
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Please select a note
+                {t('noteApp.selectedNoteTip')}
             </Typography>
           )}
         </Grid>
