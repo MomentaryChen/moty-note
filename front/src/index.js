@@ -6,22 +6,23 @@ import {Navigate, createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.css';
 import App from './App';
 import ErrorPage from './component/error-page/ErrorPage';
+import Note from './component/note/Note'
 
 const router = createBrowserRouter([
   {
-    path: "demo",
+    path: "note",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
         path: "home",
-        element: <p>This is Home</p>,
+        element: <Note />,
       }
     ],
   },
   {
     path: "*",
-    element: <Navigate to="/demo" replace />
+    element: <Navigate to="/note" replace />
   }
 ]);
 
